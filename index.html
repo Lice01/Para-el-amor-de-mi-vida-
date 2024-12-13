@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti, mi amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ff9aa2, #ffc3a0);
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5em;
+            margin-top: 50px;
+            animation: fadeInDown 2s ease-in-out;
+        }
+        .card {
+            display: none;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: left;
+            animation: fadeInUp 1s ease-in-out forwards;
+            opacity: 0;
+        }
+        .card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        button {
+            margin: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+        button:hover {
+            background-color: #e05650;
+            transform: scale(1.1);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para ti, mi negra hermosa 💕</h1>
+    <button onclick="showCard()">Abrir mi carta</button>
+    <div class="card" id="loveCard">
+        <p>Mi amor,</p>
+        <p>Quiero aprovechar este momento para recordarte lo mucho que significas para mí. Desde el primer día que te conocí, llenaste mi vida de luz, amor y felicidad. Cada momento a tu lado es un regalo que atesoro con todo mi corazón.</p>
+        <p>Tu sonrisa ilumina mis días, tu risa es la melodía más hermosa, y tus abrazos son mi refugio favorito. Me haces sentir amada, valorada y comprendida de una manera que nunca pensé posible.</p>
+        <p>Espero que esta carta te recuerde lo especial que eres y cuánto te amo. Quiero seguir construyendo contigo una historia llena de amor, risas y sueños cumplidos. Gracias por ser mi compañera en esta aventura llamada vida. ❤️</p>
+        <p>Con todo mi amor,</p>
+        <p>Tuya siempre</p>
+        <button onclick="goToSong()">Cuando la escucho pienso en ti</button>
+    </div>
+
+    <script>
+        function showCard() {
+            const card = document.getElementById('loveCard');
+            if (card.style.display === 'none' || card.style.display === '') {
+                card.style.display = 'block';
+                card.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function goToSong() {
+            // Reemplaza el enlace con el de tu canción
+            const songUrl = "https://youtu.be/-9l5t3MWss8?si=kz8aRSNqyeu0RKFI";
+            window.open(songUrl, "_blank"); // Abre el enlace en una nueva pestaña
+        }
+    </script>
+</body>
+</html>
